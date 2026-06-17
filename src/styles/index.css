@@ -1,11 +1,124 @@
-/* 
+body {
+  margin: 0;
+  background-color: #f7f1f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
 
-*/
+.todo-card {
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.todo-title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 32px;
+  color: #3d3140;
+}
+
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.todo-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #6d5c70;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd0df;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.todo-input:focus {
+  border-color: #b583a8;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background-color: #fbf7fa;
+  border: 1px solid #eee1ec;
+  border-radius: 14px;
+}
+
+.todo-item-text {
+  color: #3d3140;
+  word-break: break-word;
+}
+
+.todo-delete-button {
+  border: none;
+  background-color: transparent;
+  color: #a64d79;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.todo-delete-button:hover {
+  color: #7f2f59;
+}
+
+.todo-clear-button {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 14px;
+  background-color: #3d3140;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.todo-clear-button:hover {
+  background-color: #2b2230;
+}
+
+.todo-message {
+  margin: 12px 0;
+  color: #6d5c70;
+  text-align: center;
+}
+
+.todo-error {
+  margin: 12px 0;
+  color: #a33a3a;
+  text-align: center;
+}
+
+.todo-counter {
+  margin: 18px 0 0;
+  color: #6d5c70;
+  text-align: center;
+  font-size: 14px;
+}
